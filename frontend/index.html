@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+	<link href="src/css/styles.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Backbone CRUD APP</title>
+</head>
+
+<body>
+	<header class="bs-header">
+		<div class="container">
+				<h1>Backbone Contact Manager App</h1>
+			<p>Simple Backbone.js CRUD example application</p>
+		</div>
+	</header>
+	<h2 class="page-header text-center">Add new Contact</h2>
+		<!-- <%= isNew ? 'Create' : 'Edit' %> Contact</h2> -->
+	<form role="form" class="form-horizontal contract-form">
+		<div class="form-group">
+			<label class="col-sm-4 control-label">FirstName:</label>
+			<div class="col-sm-6">
+				<input type="text" class="form-control firstname-input" >
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-4 control-label">LastName:</label>
+			<div class="col-sm-6">
+				<input type="text" class="form-control lastname-input" >
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-4 control-label">Email address:</label>
+			<div class="col-sm-6">
+				<input type="email" class="form-control email-input" >
+			</div>
+		</div>
+		<!-- <div class="form-group">
+			<label class="col-sm-4 control-label">Telephone number:</label>
+			<div class="col-sm-6">
+				<input type="tel" class="form-control contact-tel-input" value="<%- tel %>">
+			</div>
+		</div> -->
+		<div class="form-group">
+			<div class="col-sm-offset-4 col-sm-3">
+				<button class="btn btn-outline btn-lg btn-block add-blog">ADD</button>
+			</div>
+			<div class="col-sm-3">
+				<a href="#contacts" class="btn btn-outline btn-lg btn-block">Cancel</a>
+			</div>
+		</div>
+	</form>
+	
+	<!-- showing list of contacts  -->
+	<div class="container">
+		<h2 class="page-header text-center">List of contacts</h2>
+	     <table class="table">
+			
+			<tbody class="contacts-list"></tbody>
+		</table>
+	</div>
+
+
+	<!-- single contact template -->
+<script type="text/template" class="contacts-list-template">
+
+	 <!-- <div class="thumbnail">
+       <img class="media-object" src="src/img/faces/6.jpg">
+      </div>
+      <div class="media-heading">
+        <h3>
+         <strong class="firstname"><%= firstname %></strong> <strong class="lastname"><%= lastname %></strong>
+          <small>
+            <a><span class="glyphicon glyphicon-pencil edit-contact"></span></a>
+            <a class="delete-contact">
+              <span class="glyphicon glyphicon-trash"></span>
+            </a>
+          </small>
+        </h3>
+      </div>
+      <div class="media-body">
+        <dl>
+		  <dt></dt>
+		  <dd></dd>
+          <dt>Email:</dt>
+          <dd class="email"><%= email %></dd>
+        </dl>
+      </div>
+      <hr> -->
+
+		<td><span class="firstname"><%= firstname %></span></td>
+		<td><span class="lastname"><%= lastname %></span></td>
+		<td><span class="email"><%= email %></span></td>
+		<td>
+			<button class="btn btn-warning edit-contact">Edit</button> 
+			<button class="btn btn-danger delete-contact">Delete</button>
+			<button class="btn btn-success update-contact" style="display:none">Update</button> 
+			<button class="btn btn-danger cancel" style="display:none">Cancel</button>
+		</td>
+
+</script>
+
+	<script src="lib/jquery/dist/jquery.js"></script>
+	<script src="lib/underscore/underscore.js"></script>
+	<script src="lib/backbone/backbone.js"></script>
+	<script src="src/js/scripts.js"></script>
+</body>
+
+</html>
