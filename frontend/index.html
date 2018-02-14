@@ -36,12 +36,12 @@
 				<input type="email" class="form-control email-input" >
 			</div>
 		</div>
-		<!-- <div class="form-group">
+		<div class="form-group">
 			<label class="col-sm-4 control-label">Telephone number:</label>
 			<div class="col-sm-6">
-				<input type="tel" class="form-control contact-tel-input" value="<%- tel %>">
+				<input type="tel" class="form-control telnumber-input" >
 			</div>
-		</div> -->
+		</div>
 		<div class="form-group">
 			<div class="col-sm-offset-4 col-sm-3">
 				<button class="btn btn-outline btn-lg btn-block add-blog">ADD</button>
@@ -65,30 +65,6 @@
 	<!-- single contact template -->
 <script type="text/template" class="contacts-list-template">
 
-	 <!-- <div class="thumbnail">
-       <img class="media-object" src="src/img/faces/6.jpg">
-      </div>
-      <div class="media-heading">
-        <h3>
-         <strong class="firstname"><%= firstname %></strong> <strong class="lastname"><%= lastname %></strong>
-          <small>
-            <a><span class="glyphicon glyphicon-pencil edit-contact"></span></a>
-            <a class="delete-contact">
-              <span class="glyphicon glyphicon-trash"></span>
-            </a>
-          </small>
-        </h3>
-      </div>
-      <div class="media-body">
-        <dl>
-		  <dt></dt>
-		  <dd></dd>
-          <dt>Email:</dt>
-          <dd class="email"><%= email %></dd>
-        </dl>
-      </div>
-      <hr> -->
-
 		<td><span class="firstname"><%= firstname %></span></td>
 		<td><span class="lastname"><%= lastname %></span></td>
 		<td><span class="email"><%= email %></span></td>
@@ -100,11 +76,12 @@
 		</td>
 
 </script>
+<script src="build/app.build.js"></script>
 
-	<script src="lib/jquery/dist/jquery.js"></script>
+	<!-- <script src="lib/jquery/dist/jquery.js"></script>
 	<script src="lib/underscore/underscore.js"></script>
 	<script src="lib/backbone/backbone.js"></script>
-	<script src="src/js/scripts.js"></script>
+	<script src="src/js/scripts.js"></script> -->
 </body>
 
 </html>

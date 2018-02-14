@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/scripts.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">js/</a> scripts.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/56</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/20</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/56</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// var _ = require("underscore");
+// var $ = require("jquery");
+// require("backbone");
+&nbsp;
+<span class="cstat-no" title="statement not covered" >Backbone.Model.prototype.idAttribute = "_id";</span>
+&nbsp;
+// Backbone Model
+&nbsp;
+<span class="cstat-no" title="statement not covered" >var Contact = Backbone.Model.extend({</span>
+  defaults: {
+    firstname: "",
+    lastname: "",
+    email: "",
+    telnumber:""
+  }
+});
+&nbsp;
+// Backbone Collection
+&nbsp;
+<span class="cstat-no" title="statement not covered" >var Contacts = Backbone.Collection.extend({</span>
+  url: "http://localhost:6300/api/contacts"
+});
+&nbsp;
+// instantiate a Collection
+&nbsp;
+<span class="cstat-no" title="statement not covered" >var contacts = new Contacts();</span>
+&nbsp;
+// Backbone View for one blog
+&nbsp;
+<span class="cstat-no" title="statement not covered" >var ContactView = Backbone.View.extend({</span>
+  model: new Contact(),
+  tagName: "tr",
+  initialize: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    this.template = _.template($(".contacts-list-template").html());</span>
+  },
+  events: {
+    "click .edit-contact": "edit",
+    "click .update-contact": "update",
+    "click .cancel": "cancel",
+    "click .delete-contact": "delete"
+  },
+    edit: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >      $(".edit-contact").hide();</span>
+<span class="cstat-no" title="statement not covered" >      $(".delete-contact").hide();</span>
+<span class="cstat-no" title="statement not covered" >      this.$(".update-contact").show();</span>
+<span class="cstat-no" title="statement not covered" >      this.$(".cancel").show();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      var firstname = this.$(".firstname").html();</span>
+<span class="cstat-no" title="statement not covered" >      var lastname = this.$(".lastname").html();</span>
+<span class="cstat-no" title="statement not covered" >      var email = this.$(".email").html();</span>
+<span class="cstat-no" title="statement not covered" >       var telnumber = this.$(".telnumber").html();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      this.$(".firstname").html('&lt;input type="text" class="form-control firstname-update" value="' +  firstname +'"&gt;');</span>
+<span class="cstat-no" title="statement not covered" >      this.$(".lastname").html( '&lt;input type="text" class="form-control lastname-update" value="' + lastname + '"&gt;');</span>
+<span class="cstat-no" title="statement not covered" >      this.$(".email").html( '&lt;input type="text" class="form-control email-update" value="' + email +'"&gt;');</span>
+<span class="cstat-no" title="statement not covered" >       this.$(".telnumber").html('&lt;input type="text" class="form-control telnumber-update" value="' + telnumber + '"&gt;');</span>
+  },
+    update: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >      this.model.set("firstname", $(".firstname-update").val());</span>
+<span class="cstat-no" title="statement not covered" >      this.model.set("lastname", $(".lastname-update").val());</span>
+<span class="cstat-no" title="statement not covered" >      this.model.set("email", $(".email-update").val());</span>
+<span class="cstat-no" title="statement not covered" >       this.model.set("telnumber", $(".telnumber-update").val());</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      this.model.save(null, {</span>
+        success: <span class="fstat-no" title="function not covered" >function(response) {</span>
+<span class="cstat-no" title="statement not covered" >          console.log(</span>
+            "Successfully UPDATED blog with _id: " + response.toJSON()._id
+          );
+        },
+        error: <span class="fstat-no" title="function not covered" >function(err) {</span>
+<span class="cstat-no" title="statement not covered" >          console.log("Failed to update blog!");</span>
+        }
+      });
+    },
+  cancel: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    contactsView.render();</span>
+  },
+  delete: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    this.model.destroy({</span>
+      success: <span class="fstat-no" title="function not covered" >function(response) {</span>
+<span class="cstat-no" title="statement not covered" >        console.log(</span>
+          "Successfully DELETED contact with _id: " + response.toJSON()._id
+        );
+      },
+      error: <span class="fstat-no" title="function not covered" >function(err) {</span>
+<span class="cstat-no" title="statement not covered" >        console.log("Failed to delete contact!");</span>
+      }
+    });
+  },
+  render: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    this.$el.html(this.template(this.model.toJSON()));</span>
+<span class="cstat-no" title="statement not covered" >    return this;</span>
+  }
+});
+&nbsp;
+// Backbone View for all blogs
+&nbsp;
+<span class="cstat-no" title="statement not covered" >var ContactsView = Backbone.View.extend({</span>
+  model: contacts,
+  el: $(".contacts-list"),
+  initialize: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >          var self = this;</span>
+<span class="cstat-no" title="statement not covered" >          this.model.on("add", this.render, this);</span>
+          // this.model.on("change", function() {
+          //     setTimeout(function() {
+          //       self.render();
+          //     }, 30);
+          //   },this );
+<span class="cstat-no" title="statement not covered" >          this.model.on("remove", this.render, this);</span>
+&nbsp;
+          //server request
+<span class="cstat-no" title="statement not covered" >          this.model.fetch({</span>
+            success: <span class="fstat-no" title="function not covered" >function(response) {</span>
+<span class="cstat-no" title="statement not covered" >              _.each(response.toJSON(), <span class="fstat-no" title="function not covered" >function(item) {</span></span>
+<span class="cstat-no" title="statement not covered" >                console.log("Successfully GOT contacts  with _id: " + item._id);</span>
+              });
+            },
+            error: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >              console.log("Failed to get contacts!");</span>
+            }
+          });
+  },
+  render: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    var self = this;</span>
+<span class="cstat-no" title="statement not covered" >    this.$el.html("");</span>
+<span class="cstat-no" title="statement not covered" >    _.each(this.model.toArray(), <span class="fstat-no" title="function not covered" >function(contact) {</span></span>
+<span class="cstat-no" title="statement not covered" >      self.$el.append(new ContactView({ model: contact }).render().$el);</span>
+    });
+<span class="cstat-no" title="statement not covered" >    return this;</span>
+  }
+});
+&nbsp;
+<span class="cstat-no" title="statement not covered" >var contactsView = new ContactsView();</span>
+&nbsp;
+&nbsp;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >$(document).ready(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >  $(".add-blog").on("click", <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >              var contact = new Contact({</span>
+                        firstname: $(".firstname-input").val(),
+                        lastname: $(".lastname-input").val(),
+                        email: $(".email-input").val(),
+                        telnumber:$(".telnumber-input").val()
+                       });
+<span class="cstat-no" title="statement not covered" >    $(".firstname-input").val("");</span>
+<span class="cstat-no" title="statement not covered" >    $(".lastname-input").val("");</span>
+<span class="cstat-no" title="statement not covered" >    $(".email-input").val("");</span>
+<span class="cstat-no" title="statement not covered" >     $(".telnumber-input").val("");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    contacts.add(contact);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    contact.save(null, {</span>
+      success: <span class="fstat-no" title="function not covered" >function(response) {</span>
+<span class="cstat-no" title="statement not covered" >        console.log(</span>
+          "Successfully SAVED contact with _id: " + response.toJSON()._id
+        );
+      },
+      error: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >        console.log("Failed to save contact!");</span>
+      }
+    });
+  });
+});
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Feb 13 2018 22:13:31 GMT-0800 (PST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

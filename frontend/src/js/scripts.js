@@ -1,3 +1,7 @@
+// var _ = require("underscore");
+// var $ = require("jquery");
+// require("backbone");
+
 Backbone.Model.prototype.idAttribute = "_id";
 
 // Backbone Model
@@ -6,7 +10,8 @@ var Contact = Backbone.Model.extend({
   defaults: {
     firstname: "",
     lastname: "",
-    email: ""
+    email: "",
+    telnumber:""
   }
 });
 
@@ -43,15 +48,18 @@ var ContactView = Backbone.View.extend({
       var firstname = this.$(".firstname").html();
       var lastname = this.$(".lastname").html();
       var email = this.$(".email").html();
+       var telnumber = this.$(".telnumber").html();
 
       this.$(".firstname").html('<input type="text" class="form-control firstname-update" value="' +  firstname +'">');
       this.$(".lastname").html( '<input type="text" class="form-control lastname-update" value="' + lastname + '">');
       this.$(".email").html( '<input type="text" class="form-control email-update" value="' + email +'">');
+       this.$(".telnumber").html('<input type="text" class="form-control telnumber-update" value="' + telnumber + '">');
   },
     update: function() {
       this.model.set("firstname", $(".firstname-update").val());
       this.model.set("lastname", $(".lastname-update").val());
       this.model.set("email", $(".email-update").val());
+       this.model.set("telnumber", $(".telnumber-update").val());
 
       this.model.save(null, {
         success: function(response) {
@@ -131,11 +139,13 @@ $(document).ready(function() {
               var contact = new Contact({
                         firstname: $(".firstname-input").val(),
                         lastname: $(".lastname-input").val(),
-                        email: $(".email-input").val()
+                        email: $(".email-input").val(),
+                        telnumber:$(".telnumber-input").val()
                        });
     $(".firstname-input").val("");
     $(".lastname-input").val("");
     $(".email-input").val("");
+     $(".telnumber-input").val("");
 
     contacts.add(contact);
 
