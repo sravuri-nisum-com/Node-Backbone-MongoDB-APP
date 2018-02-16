@@ -135,16 +135,36 @@ describe('Tests for ContactsList in collections ', function() {
 
 
 //Views
-// describe('Tests for ContactView', function() {
-//      var contactView ;
-    
-//      it("Should be tied to a DOM element when created, based off the property provided.", function() {
-     
-//        expect(contactView.$el.tagName.toLowerCase()).toBe("tr");
-//      });
+// describe("The  add contact view", function() {
+  var contactView;
 
+  beforeEach(function() {
+    contactView = new ContactView();
+     contactView.render();
+     contactView.$el.appendTo("body");
+  });
+  afterEach(function() {
+    contactView.$el.remove();
+  });
 
-    
-   
+  it("should have an  all editable fields", function() {
+    expect(contactView.$el).toContainElement("input.firstname-input");
+    expect(contactView.$el).toContainElement("input.lastname-input");
+    expect(contactView.$el).toContainElement("input.email-input");
+    expect(contactView.$el).toContainElement("input.telnumber-input");
+  });
 
-//   });
+  it("should allow a user to add contact", function() {
+    expect(contactView.$el).toContainElement("button.add-blog");
+
+    contactView.$(".add-blog").click();
+     expect(contactView.$el).toContainElement(".contract-form");
+    expect(contactView.$el).toContainElement(".firstname-input");
+    expect(contactView.$el).toContainElement(".lastname-input");
+    expect(contactView.$el).toContainElement(".email-input");
+    expect(contactView.$el).toContainElement(".telnumber-input");
+    expect(contactView.$(".contract-form")).toContainElement("input.firstname-input");
+    expect(contactView.$(".contract-form")).toContainElement("input.lastname-input");
+    expect(contactView.$(".contract-form")).toContainElement("input.email-input");
+    expect(contactView.$(".contract-form")).toContainElement("input.telnumber-input");
+  });
