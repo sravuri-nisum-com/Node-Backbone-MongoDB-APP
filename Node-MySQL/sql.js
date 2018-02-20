@@ -17,12 +17,12 @@ app.use(express.static(__dirname + "/public"));
 
 //connecting to mysql DB 
 
-var connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "4321",
-  database: "contacts_db"
-});
+// var connection = mysql.createConnection({
+//   host: "localhost",
+//   user: "root",
+//   password: "4321",
+//   database: "contacts_db"
+// });
 connection.connect(function(err) {
   if (err) throw err;
   console.log("You are now connected...");
